@@ -1,0 +1,8 @@
+${head}
+<ul>
+	${items.map(i =>{ return `
+	<li><a href="/items/${i.id}">${i.item} : ${i.cost}</a></li>
+	` }).join("") }
+</ul>
+
+${foot}
